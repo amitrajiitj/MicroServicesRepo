@@ -7,3 +7,5 @@
 /APIGateway/bin/Debug/netcoreapp2.1
 /MicroServicesAssignment/bin/Debug/netcoreapp2.1
 /MicroServicesAssignment/obj
+/AccountAPI/bin/Debug/netcoreapp2.1
+/AccountAPI/obj

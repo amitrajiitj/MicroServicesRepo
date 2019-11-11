@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroServicesAssignment", "MicroServicesAssignment\MicroServicesAssignment.csproj", "{0E5F6400-F8B0-4426-BD42-B85BB38AF95E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIGateway", "APIGateway\APIGateway.csproj", "{93D10A8D-FD26-4DB5-AB5B-EA6D7D796576}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIGateway", "APIGateway\APIGateway.csproj", "{93D10A8D-FD26-4DB5-AB5B-EA6D7D796576}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountAPI", "AccountAPI\AccountAPI.csproj", "{626D1EC7-C21B-471A-9223-F6FA23C9DEC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{93D10A8D-FD26-4DB5-AB5B-EA6D7D796576}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93D10A8D-FD26-4DB5-AB5B-EA6D7D796576}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93D10A8D-FD26-4DB5-AB5B-EA6D7D796576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{626D1EC7-C21B-471A-9223-F6FA23C9DEC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{626D1EC7-C21B-471A-9223-F6FA23C9DEC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{626D1EC7-C21B-471A-9223-F6FA23C9DEC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{626D1EC7-C21B-471A-9223-F6FA23C9DEC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
