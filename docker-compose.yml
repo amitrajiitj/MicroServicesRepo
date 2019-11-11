@@ -1,8 +1,64 @@
-version: '3.4'
+version: '3.5'
 
+ 
+
+networks:
+  devenv:
+    name: devenv
+    
 services:
-  microservicesassignment:
-    image: ${DOCKER_REGISTRY-}microservicesassignment
-    build:
-      context: .
-      dockerfile: MicroServicesAssignment/Dockerfile
+  api-gateway:
+    image: amitsonker/api-gateway
+    container_name: api-gateway
+    restart: always
+    ports:
+      - "5000:80"
+    depends_on:
+      - eureka-server
+      - config-server
+      - customer-service
+      - account-service
+    networks:
+      - devenv
+
+ 
+
+   customer-service:
+    image: amitsonker/customer-service
+    container_name: customer-service
+    restart: always
+    ports:
+      - "5001:80"
+    depends_on:
+      - eureka-server
+      - config-server
+    networks:
+      - devenv
+   
+   account-service:
+    image: amitsonker/account-service
+    container_name: account-service
+    restart: always
+    ports:
+      - "5002:80"
+    depends_on:
+      - eureka-server
+      - config-server
+    networks:
+      - devenv
+        
+  eureka-server:
+    image: amitsonker/eureka-server
+    container_name: eureka-server
+   restart: always
+    ports:
+      - "8761:80"
+
+ 
+
+  config-server:
+    image: amitsonker/config-server
+    container_name: config-server
+   restart: always
+    ports:
+      - "8888:80"
