@@ -7,6 +7,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Steeltoe.Extensions.Configuration.ConfigServer;
 
 namespace MicroServicesAssignment
 {
@@ -16,9 +17,15 @@ namespace MicroServicesAssignment
         {
             CreateWebHostBuilder(args).Build().Run();
         }
-
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+                .ConfigureAppConfiguration((webHostBuilderContext, configurationBuilder) =>
+                {
+
+                    var hostingEnvironment = webHostBuilderContext.HostingEnvironment;
+                    configurationBuilder.AddConfigServer(hostingEnvironment.EnvironmentName);
+                })
+            .UseStartup<Startup>();
+
     }
 }

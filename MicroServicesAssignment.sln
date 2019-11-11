@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroServicesAssignment", "MicroServicesAssignment\MicroServicesAssignment.csproj", "{0E5F6400-F8B0-4426-BD42-B85BB38AF95E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroServicesAssignment", "MicroServicesAssignment\MicroServicesAssignment.csproj", "{0E5F6400-F8B0-4426-BD42-B85BB38AF95E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIGateway", "APIGateway\APIGateway.csproj", "{93D10A8D-FD26-4DB5-AB5B-EA6D7D796576}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0E5F6400-F8B0-4426-BD42-B85BB38AF95E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E5F6400-F8B0-4426-BD42-B85BB38AF95E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E5F6400-F8B0-4426-BD42-B85BB38AF95E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93D10A8D-FD26-4DB5-AB5B-EA6D7D796576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93D10A8D-FD26-4DB5-AB5B-EA6D7D796576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93D10A8D-FD26-4DB5-AB5B-EA6D7D796576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93D10A8D-FD26-4DB5-AB5B-EA6D7D796576}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

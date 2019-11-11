@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 
 namespace MicroServicesAssignment.Controllers
 {
@@ -10,9 +11,15 @@ namespace MicroServicesAssignment.Controllers
     [ApiController]
     public class CustomerController : Controller
     {
+        ConfigSettings configSettings { get; set; }
+
+        public CustomerController(IOptions<ConfigSettings> settings)
+        {
+            configSettings = settings.Value;
+        }
         public IActionResult Index()
         {
-            return View();
+            return Content(configSettings.Message);
         }
     }
 }
