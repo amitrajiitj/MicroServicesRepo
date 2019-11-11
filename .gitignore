@@ -9,3 +9,5 @@
 /MicroServicesAssignment/obj
 /AccountAPI/bin/Debug/netcoreapp2.1
 /AccountAPI/obj
+/bin/Debug
+/obj

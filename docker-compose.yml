@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  microservicesassignment:
+    image: ${DOCKER_REGISTRY-}microservicesassignment
+    build:
+      context: .
+      dockerfile: MicroServicesAssignment/Dockerfile

@@ -11,8 +11,8 @@
       "DownstreamPathTemplate": "/api/values",
       "DownstreamScheme": "http",
       "UseServiceDiscovery": true,
-      "ServiceName": "orderservice",
-      "UpstreamPathTemplate": "/order-api/{catchAll}",
+      "ServiceName": "accountapi",
+      "UpstreamPathTemplate": "/accountapi/{catchAll}",
       "UpstreamHttpMethod": []
     }
   ],
